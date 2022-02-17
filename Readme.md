@@ -21,6 +21,7 @@ $ git clone https://github.com/icc-dao/service-traefik-v2
 $ echo '{"ipv6":true,"fixed-cidr-v6":"fd00::/80","experimental":true,"ip6tables":true}' > /etc/docker/daemon.json
 $ systemctl restart docker
 $ docker network create --ipv6 --subnet fd8b:20d3:7f65:72ae::/64 traefik-v2-proxy
+$ cd /opt/services/service-traefik-v2
 $ ./generate_config.sh
 ```
 
